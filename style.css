@@ -1,0 +1,122 @@
+/*styles-start*/
+:root{
+    --dark-blue: hsl(223, 47%, 23%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --active-purple: hsl(245, 81%, 68%);
+    --purple: hsl(245, 75%, 52%);
+}
+
+.line{line-height: 25px;}
+.msc-icon{padding-right: 20px; padding-left: 25px;}
+.gap{padding: 30px;}
+.font{font-family: 'Red Hat Display', sans-serif;}
+
+strong{font-weight: 900;color: var(--dark-blue);}
+span{color: var(--desaturated-blue);}
+img{border-top-left-radius: 18px; border-top-right-radius: 18px;}
+
+.align{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/*styles-end*/
+
+*{margin: 0; box-sizing: border-box;}
+
+html{
+    background-color: hsl(225, 100%, 94%);
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/*card body start*/
+body{height: 100vh;}
+
+main{
+    background-color: white;
+    width: 450px;
+    height: 690px;
+    margin: auto;
+    border-radius: 18px;
+    box-shadow: 0px 15px 20px 0px hsla(245, 75%, 52%, 0.212);
+}
+/*card body end*/
+
+/*middle wording start*/
+h1{
+    color: var(--dark-blue);
+    padding-top: 17px;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 4.5rem;
+}
+
+.description{
+    color: var(--desaturated-blue);
+    width: 300px;
+    padding-bottom: 20px;
+    font-weight: 500;
+}
+/*middle wording end*/
+
+/*plan box start*/
+.plan-box{
+    background-color: hsl(225, 100%, 98%);
+    width: 355px;
+    height: 100px;
+    margin: auto;
+    justify-content: space-between;
+    border-radius: 12px;
+}
+
+.plan-box p{padding-right: 70px;}
+/*plan box end*/
+
+/*bottom buttons start*/
+.btn-change{
+    color: var(--purple);
+    background-color: inherit;
+    text-decoration: underline;
+    border-style: none;
+    font-family: 'Red Hat Display', sans-serif;;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.btn-change:hover{color: var(--active-purple); text-decoration: none;}
+
+.btn-payment{
+    color: white;
+    background-color: var(--purple);
+    padding: 15px;
+    width: 355px;
+    font-weight: 700;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 15px 20px 0px hsl(243, 100%, 92%);
+}
+
+.btn-payment:hover{
+    color: white;
+    background-color: var(--active-purple);
+    border: none;
+}
+
+.btn-cancel{
+    color: var(--desaturated-blue);
+    background-color: transparent;
+    border-style: none;
+    line-height: 45px;
+    font-weight: 900;
+    font-size: 15px;
+}
+
+.btn-cancel:hover{color: var(--dark-blue);}
+/*bottom buttons end*/
+
+
